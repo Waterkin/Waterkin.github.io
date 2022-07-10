@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Waterkin.github.io</id>
+    <title>PP.Wang&apos;s Blog</title>
+    <updated>2022-07-10T08:50:27.059Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Waterkin.github.io"/>
+    <link rel="self" href="https://Waterkin.github.io/atom.xml"/>
+    <subtitle>一名深度学习研究生的学习日常。</subtitle>
+    <logo>https://Waterkin.github.io/images/avatar.png</logo>
+    <icon>https://Waterkin.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, PP.Wang&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[20220706 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220706-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220706-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-07-06T09:35:04.000Z</updated>
+        <content type="html"><![CDATA[<p>没什么好说的，今天大爆炸。<br>
+关键在于自己纠结在：<br>
+① 早上大盘下跌，以为会回调<br>
+② 早上大盘下跌，所以不该进场，应该先观望一下</p>
+<p>另外明天好像没什么票可以买，做好手上的票吧</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220705 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220705-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220705-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-07-05T11:50:45.000Z</updated>
+        <content type="html"><![CDATA[<p>今天早上错过大盘回调入场的机会，失不再来，下次要抓住！<br>
+今日收盘前买入三一重工</p>
+<h1 id="1-三一重工">1. 三一重工</h1>
+<p>买入价：19.3<br>
+卖出价：21左右<br>
+止损价：18.3</p>
+<p>就盯这只票，康泰生物45.2买入。<br>
+今天结束。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220704 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220704-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220704-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-07-04T09:01:43.000Z</updated>
+        <content type="html"><![CDATA[<p>今天江特电机和中直都赚了。<br>
+那么本人的策略似乎应验了一部分，接下来继续操作。</p>
+<h1 id="1九洲药业">1，九洲药业</h1>
+<p>买入价：51.6<br>
+卖出价：61.8<br>
+止损点：49.4</p>
+<h1 id="2康泰生物">2，康泰生物</h1>
+<p>买入价：45.2<br>
+卖出价：51.3<br>
+止损点：42.3</p>
+<h1 id="3万华化学">3，万华化学</h1>
+<p>买入价：95.8<br>
+卖出价：106.5<br>
+止损点：92.0</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220701 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220701-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220701-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-07-01T12:21:19.000Z</updated>
+        <content type="html"><![CDATA[<p>中直准备止损卖出，但我相信它的价值还能回来<br>
+江特今天暴涨8%，明天继续<br>
+万华化学、康泰生物、大族激光、口子窖看情况进。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220630 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220630-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220630-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-06-30T08:51:57.000Z</updated>
+        <content type="html"><![CDATA[<p>今日无操作<br>
+希望明天把本吃回来<br>
+然后研究下一波趋势</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[深度学习 调参过程]]></title>
+        <id>https://Waterkin.github.io/shen-du-xue-xi-diao-can-guo-cheng/</id>
+        <link href="https://Waterkin.github.io/shen-du-xue-xi-diao-can-guo-cheng/">
+        </link>
+        <updated>2022-06-30T01:32:38.000Z</updated>
+        <content type="html"><![CDATA[<p>https://zhuanlan.zhihu.com/p/166202095</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220629 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220629-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220629-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-06-29T13:39:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1-复盘">1. 复盘</h1>
+<p>今天的最大问题：<br>
+① 交易不看大盘走势<br>
+② 交易心态太急，应等到早上十点后，下午两点半后再做决断<br>
+③ 昨天看的股全部跌</p>
+<h1 id="2-思考">2. 思考</h1>
+<p>是否只抓一只股做T？</p>
+<h1 id="3-选股">3. 选股</h1>
+<p>江特电机（当时应该是买错了，因为这只股票已经达到50%涨幅，赚不到波段了）<br>
+买点：<br>
+卖点：<br>
+止损点：24.31</p>
+<p>中直股份<br>
+卖点：50.64<br>
+止损：42.94</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20220628 交易记录]]></title>
+        <id>https://Waterkin.github.io/20220628-jiao-yi-ji-lu/</id>
+        <link href="https://Waterkin.github.io/20220628-jiao-yi-ji-lu/">
+        </link>
+        <updated>2022-06-28T11:13:53.000Z</updated>
+        <content type="html"><![CDATA[<p>第一次在同花顺设置交易单，有点手生哈哈哈哈哈~<br>
+严格执行交易逻辑！</p>
+<h1 id="1-节能风电">1. 节能风电</h1>
+<p>买点：4.82<br>
+卖点：5.43<br>
+止损点：4.69</p>
+<h1 id="2-金龙鱼">2. 金龙鱼</h1>
+<p>买点：49.8<br>
+卖点：64.155<br>
+止损点：47.3</p>
+<h1 id="3-科大讯飞">3. 科大讯飞</h1>
+<p>买点：41.86<br>
+卖点：53.92<br>
+止损点：39.93</p>
+<h1 id="4-恒瑞医药">4. 恒瑞医药</h1>
+<p>买点：34.55<br>
+卖点：44.17<br>
+止损点：32.47</p>
+<h1 id="5-中直股份">5. 中直股份</h1>
+<p>买点：46.08<br>
+卖点：57.69<br>
+止损点：42.64</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown 写作技巧]]></title>
+        <id>https://Waterkin.github.io/markdown-xie-zuo-ji-qiao/</id>
+        <link href="https://Waterkin.github.io/markdown-xie-zuo-ji-qiao/">
+        </link>
+        <updated>2022-06-28T03:15:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1-markdown-语法说明书">1. Markdown 语法说明书</h1>
+<p>https://keatonlao.gitee.io/a-study-note-for-markdown/syntax/%E8%AF%A6%E7%BB%86%E7%89%88/markdown-%E5%8A%A0%E7%B2%97%E5%80%BE%E6%96%9C%E4%B8%8B%E5%88%92%E7%BA%BF%E7%AD%89/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pytorch 训练加速方法]]></title>
+        <id>https://Waterkin.github.io/pytorch-xun-lian-jia-su-fang-fa/</id>
+        <link href="https://Waterkin.github.io/pytorch-xun-lian-jia-su-fang-fa/">
+        </link>
+        <updated>2022-06-28T02:58:11.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1-accelerate库">1. accelerate库</h1>
+<p>https://github.com/huggingface/accelerate<br>
+A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision</p>
+<h1 id="2-amp库">2. amp库</h1>
+<p>https://github.com/yanqiangmiffy/amp-pytorch</p>
+<h3 id="1未使用混合精度训练">(1)未使用混合精度训练</h3>
+<pre><code class="language-python">for batch_idx, (inputs, labels) in enumerate(data_loader):
+  self.optimizer.zero_grad()
+
+  outputs = self.model(inputs)
+  loss = self.criterion(outputs, labels)
+
+  loss.backward()
+  self.optimizer.step()
+</code></pre>
+<h3 id="2使用混合精度训练">(2)使用混合精度训练</h3>
+<pre><code class="language-python">scaler = torch.cuda.amp.GradScaler()
+
+for batch_idx, (inputs, labels) in enumerate(data_loader):
+  self.optimizer.zero_grad()
+
+  with torch.cuda.amp.autocast():
+    outputs = self.model(inputs)
+    loss = self.criterion(outputs, labels)
+
+  self.scaler.scale(loss).backward()
+  self.scaler.step(self.optimizer)
+  self.scaler.update()
+</code></pre>
+<h3 id="3知乎大神分享">(3)知乎大神分享</h3>
+<p>https://zhuanlan.zhihu.com/p/158375055</p>
+]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Pytorch 训练加速方法 | PP.Wang&#39;s Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Waterkin.github.io/favicon.ico?v=1657442916180">
+<link rel="stylesheet" href="https://Waterkin.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="1. accelerate库
+https://github.com/huggingface/accelerate
+A simple way to train and use PyTorch models with multi-GPU, TP..." />
+    <meta name="keywords" content="Pytorch" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Waterkin.github.io">
+        <img src="https://Waterkin.github.io/images/avatar.png?v=1657442916180" class="site-logo">
+        <h1 class="site-title">PP.Wang&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://Waterkin.github.io/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Waterkin" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/Waterking666" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/waterking" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一名深度学习研究生的学习日常。
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://Waterkin.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Pytorch 训练加速方法</h2>
+            <div class="post-date">2022-06-28</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="1-accelerate库">1. accelerate库</h1>
+<p>https://github.com/huggingface/accelerate<br>
+A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision</p>
+<h1 id="2-amp库">2. amp库</h1>
+<p>https://github.com/yanqiangmiffy/amp-pytorch</p>
+<h3 id="1未使用混合精度训练">(1)未使用混合精度训练</h3>
+<pre><code class="language-python">for batch_idx, (inputs, labels) in enumerate(data_loader):
+  self.optimizer.zero_grad()
+
+  outputs = self.model(inputs)
+  loss = self.criterion(outputs, labels)
+
+  loss.backward()
+  self.optimizer.step()
+</code></pre>
+<h3 id="2使用混合精度训练">(2)使用混合精度训练</h3>
+<pre><code class="language-python">scaler = torch.cuda.amp.GradScaler()
+
+for batch_idx, (inputs, labels) in enumerate(data_loader):
+  self.optimizer.zero_grad()
+
+  with torch.cuda.amp.autocast():
+    outputs = self.model(inputs)
+    loss = self.criterion(outputs, labels)
+
+  self.scaler.scale(loss).backward()
+  self.scaler.step(self.optimizer)
+  self.scaler.update()
+</code></pre>
+<h3 id="3知乎大神分享">(3)知乎大神分享</h3>
+<p>https://zhuanlan.zhihu.com/p/158375055</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Waterkin.github.io/4NICNBX6T/" class="tag">
+                    Pytorch
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Waterkin.github.io/tan-yi-tan-jin-tian-xue-dao-de-duan-xian-ce-lue/">
+                  <h3 class="post-title">
+                    谈一谈今天学到的短线策略
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'a894abe74541591b8f71',
+        clientSecret: 'fecb72d0fe6f40aa073f84d142147db6e02c776a',
+        repo: 'Waterkin.github.io',
+        owner: 'Waterkin',
+        admin: ['Waterkin'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
